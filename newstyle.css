@@ -45,6 +45,14 @@ body {
     background-color: var(--darkcream);
 }
 
+.padding{
+    padding-top: 40px;
+}
+
+.rect:hover { 
+    opacity: 0.5; 
+}
+
 img{
     width: 100%;
     display: block;
