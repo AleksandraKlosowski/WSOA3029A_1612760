@@ -1,4 +1,6 @@
-
+<!DOCTYPE html>
+<html>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +12,7 @@
     <meta name="author" content="Aleksandra Magdalena Klosowski 1612760">
     <link rel="stylesheet" href="../style.css">
     <title>Index</title>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -19,39 +21,38 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-        <!--navigation-->
-        <div class="logo header">
-                <h4>KLOSOWSKI - makeup artistry</h4>
-        </div>
-            <ul class="nav-links nav-Btn"> 
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./about1/about1.html">About</a>
-                </li>
-                <li>
-                    <a href="./Blogpost/Blogpost.html">Blogposts</a>
-                <li>
-                    <a href="./Data/Data.html">Data</a>
-                </li>
-                <li>
-                    <a href="./contact1/contact1.html">Contact</a>
-                </li>
-            </ul>
-            
-        <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-        </div>
-
-            
+        <header>
+            <nav>
+            <!--navigation-->
+            <div class="logo header">
+                    <h4>KLOSOWSKI - makeup artistry</h4>
+            </div>
+                <ul class="nav-links nav-Btn"> 
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about1/about1.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./Blogpost/Blogpost.html">Blogposts</a>
+                    <li>
+                        <a href="./Data/Data.html">Data</a>
+                    </li>
+                    <li>
+                        <a href="./contact1/contact1.html">Contact</a>
+                    </li>
+                </ul>
+                
+            <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            </div>
+    
+                
         </nav>
 
-    <body>
 
         <div class ="about-content padding">
             <div class = "transparent">
@@ -67,37 +68,26 @@
         </div>
         </header>
 
-        <section class = "section-one">
+<section class = "section-one">
 
-
-            <div class ="sec-one-right">
-                <div class ="work-content">
-                    <h3 class = "SecRightHeading">THIS DATA WILL SHOW US
-                        THE RACE DISTRIBUTION OF MAKEUP ARTISTS AS WELL
-                        AS THE TOP HIRING INDUSTRIES OF MAKEUP ARTISTS:
-                    </h3>
-                    <P class = "SecRightP"> Despite popular belief
-                        makeup artistry is an art form, that requires 
-                        attention to detail and skill. Unfortunately 
-                        South Africa is still relatively behind with the 
-                        understandings of the necessities makeup artists 
-                        provide when working on projects and do not realize 
-                        that the importance of a good makeup artist, is the 
-                        same as that as a skilled photographer and model.
-                    </P>
-                </div>
-    
-                <div class = "work-img work-img-div">
-                    <div style="text-align: center;">
-                        <h1>Top Industries Hiring Makeup Artists - by percentage</h1>
-                        <div id="d3-container" />
-                      </div>
-                      <script type="text/javascript" src="../bargraph.js"></script>
+        <div class ="sec-one-right">
+            <div class ="work-content">
+                <h3 class = "SecRightHeading">THIS DATA WILL SHOW US
+                    THE RACE DISTRIBUTION OF MAKEUP ARTISTS AS WELL
+                    AS THE TOP HIRING INDUSTRIES OF MAKEUP ARTISTS:
+                </h3>
+                <P class = "SecRightP"> Despite popular belief
+                    makeup artistry is an art form, that requires 
+                    attention to detail and skill. Unfortunately 
+                    South Africa is still relatively behind with the 
+                    understandings of the necessities makeup artists 
+                    provide when working on projects and do not realize 
+                    that the importance of a good makeup artist, is the 
+                    same as that as a skilled photographer and model.
+                </P>
             </div>
+</section>
 
-        </section>
-
-    <body>
     <h2>Pie Chart</h2>
     <svg width="500" height="400"></svg> <!--Step 2-->
     <script>
@@ -157,6 +147,14 @@
 
             
     </script>
-</body>
 
+
+  <body>
+    <div style="text-align: center;">
+      <h1>D3.js Barchart</h1>
+      <div id="d3-container" />
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</body>
 </html>
