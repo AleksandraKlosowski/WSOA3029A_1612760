@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pie chart">
+    <meta name="description" content="pie chart representation of data">
+    <meta name="author" content="Aleksandra Magdalena Klosowski 1612760">
+    <link rel="stylesheet" href="../style.css">
+    <title>Pie Chart</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../newstyle.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+        <!--navigation-->
+        <div class="logo header">
+                <h4>KLOSOWSKI - makeup artistry</h4>
+        </div>
+            <ul class="nav-links nav-Btn"> 
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../about1/about1.html">About</a>
+                </li>
+                <li>
+                    <a href="../Blogpost/Blogpost.html">Blogposts</a>
+                <li>
+                    <a href="../Data/Data.html">Data</a>
+                </li>
+                <li>
+                    <a href="../contact1/contact1.html">Contact</a>
+                </li>
+            </ul>
+            
+        <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        </div>
+
+        </nav>
+</header>
+
+<section class = "section-one"></section>
+
+<h2 class = "padding2">Makeup Artists in the Industry by Race</h2>
+<svg width="500" height="400"></svg> 
+<script>
+    
+
+    var svg = d3.select("svg"),
+        width = svg.attr("width"),
+        height = svg.attr("height"),
+        radius = 200;
+
+       
+    var data = [{name: "White", share: 51.7}, 
+                {name: "Hispanic/Latino", share: 22.8},
+                {name: "Asian", share: 11.2},
+                {name: "Black", share: 9.8},
+                {name: "Unknown", share: 4.5}];
+    
+    var g = svg.append("g")
+               .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+
+    var ordScale = d3.scaleOrdinal()
+                        .domain(data)
+                        .range(['#9cc0e7','#eeeeee','#fcfcfc','#faeacb','#f7dbd7']);
+
+
+    var pie = d3.pie().value(function(d) { 
+            return d.share; 
+        });
+
+    var arc = g.selectAll("arc")
+               .data(pie(data))
+               .enter();
+
+    var path = d3.arc()
+                 .outerRadius(radius)
+                 .innerRadius(0);
+
+    arc.append("path")
+       .attr("d", path)
+       .attr("fill", function(d) { return ordScale(d.data.name); });
+
+    var label = d3.arc()
+                  .outerRadius(radius)
+                  .innerRadius(0);
+        
+    arc.append("text")
+       .attr("transform", function(d) { 
+                return "translate(" + label.centroid(d) + ")"; 
+        })
+       .text(function(d) { return d.data.name; })
+       .style("font-family", "arial")
+       .style("font-size", 15);
+        
+
+        
+</script>
+
+    </body>
+</section>
+
+<script src="../app.js"></script>
+</body>
+</html>   
