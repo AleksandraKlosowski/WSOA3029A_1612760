@@ -254,6 +254,16 @@ navBtn:hover{
     -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
 }
 
+.sec-one-left1{
+    height: 100vh;
+    background: url("images/loading.jpg") center/cover no-repeat;
+    box-shadow: 0px 0px 14px -1px rgba(0, 0, 6, 0.75);
+    -webkit-box-shadow: 0px, 0px, 14px, -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+
+        padding-top: 80px;
+}
+
 .secColour{
     color: #fff;
     height: 100%;
