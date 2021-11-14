@@ -13,8 +13,10 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../newstyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <style type ="text/css">
+    
     .chartBox{
         max-width: 400px;
     }
@@ -34,15 +36,7 @@
         padding: 5px 10px;
         margin-right: 5px;
     }
-    .btn.red{
-        background: 'rgba(255, 99, 132, 1)';
-    }
-    .btn.blue{
-        background: 'rgba(99, 99, 255, 1)'; 
-    }
-    .btn.green{
-        background: 'rgba(99, 255, 99, 1)';
-    }
+
         </style>
 </head>
 
@@ -81,9 +75,17 @@
 
 <section class = "section-one"></section>
 
-    <div class ="chartBox">
+<div class = "work-img work-img-div">
+    <div style="text-align: center;">
+        <h1 class = "padding2">Types of Makeup Artist Degree Levels - by percentage </h1>
+        <div id="d3-container">
+      </div>
+
+  
+      <div class ="chartBox">
         <canvas id="myChart"></canvas>
     </div>
+    <!-- buttons in future
     <div class = "buttonBox">
         <ul>
             <li><a href ="#" class = "btn red">Red</a></li>
@@ -91,6 +93,7 @@
             <li><a href ="#" class = "btn green">Green</a></li>
         </ul>
     </div>
+    --> 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -99,10 +102,10 @@
         const myChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Bachelors', 'Associate', 'HS Diploma', 'Diploma', 'Other Degrees'],
                 datasets: [{
                     label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
+                    data: [41, 22, 21, 7, 9],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                     ],
@@ -121,6 +124,8 @@
             }
         });
         </script>
+
+</div>
              
 
     </body>
