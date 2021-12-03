@@ -15,21 +15,21 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color:#f2ebe9;
+    background-color:#e27d60;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 
 
 .logo {
-    color: #de5499;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
 }
 
 .footerlogo {
-    color: #de5499;
+    color: #e27d60;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 10px;
@@ -56,7 +56,7 @@ nav {
 }
 
 .nav-links a {
-    color: #de5499;
+    color: #fff;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -71,7 +71,7 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: #de5499;
+    background-color: #e27d60;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -92,7 +92,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #f2ebe9;
+        background-color: #e27d60;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -148,3 +148,5 @@ nav {
     transform: translate(-50%,0);
     pointer-events: none
   }
+
+  

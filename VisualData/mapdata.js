@@ -23,7 +23,7 @@ var simplemaps_continentmap_mapdata={
       location_hover_opacity: 1,
       location_url: "",
       location_size: 25,
-      location_type: "square",
+      location_type: "circle",
       location_border_color: "#FFFFFF",
       location_border: 2,
       location_hover_border: 2.5,
@@ -75,78 +75,70 @@ var simplemaps_continentmap_mapdata={
       SA: {
         name: "South America",
         description: "default",
-        color: "#CC33FF",
-        hover_color: "#751d92",
+        color: "#de5499",
+        hover_color: "#e99f4c",
         url: "default"
       },
       NA: {
         name: "North America",
         description: "default",
-        color: "#3366FF",
-        hover_color: "#1c388c",
+        color: "#de5499",
+        hover_color: "#e99f4c",
         url: "default"
       },
       EU: {
         name: "Europe",
         description: "default",
-        color: "#FF3366",
-        hover_color: "#c0264d",
+        color: "#de5499",
+        hover_color: "#e99f4c",
         url: "default"
       },
       AF: {
         name: "Africa",
         description: "default",
-        color: "#33FF66",
-        hover_color: "#1a8535",
+        color: "#c38d9e",
+        hover_color: "#e8a87c",
         url: "default"
       },
       NS: {
         name: "North Asia",
         description: "default",
-        color: "#33FFCC",
-        hover_color: "#23b28e",
+        color: "#de5499",
+        hover_color: "#e99f4c",
         url: "default"
       },
       SS: {
         name: "South Asia",
         description: "default",
-        color: "#FF6633",
-        hover_color: "#ac4422",
+        color: "#de5499",
+        hover_color: "#e99f4c",
         url: "default"
       },
       ME: {
         name: "Middle East",
         description: "default",
-        color: "#FFCC33",
-        hover_color: "#bb9525",
+        color: "#de5499",
+        hover_color: "#e99f4c",
         url: "default"
       },
       OC: {
-        name: "Oceania",
+        name: "Australia",
         description: "default",
-        color: "#FF33CC",
-        hover_color: "#b1238d",
+        color: "#de5499",
+        hover_color: "#e99f4c",
         url: "default"
       }
     },
     locations: {
       "0": {
-        name: "New York",
-        lat: 40.71,
-        lng: -74.0059731,
+        name: "Gauteng",
+        lat: -26.195246,
+        lng: 28.034088,
         description: "default",
         color: "default",
         url: "default",
         size: "default"
       },
-      "1": {
-        name: "London",
-        lat: 51.5073346,
-        lng: -0.1276831,
-        description: "default",
-        color: "default",
-        url: "default"
-      }
     },
     labels: {}
   };
