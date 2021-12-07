@@ -36,6 +36,9 @@
     --lightOrange:#e8a87c;
     --blue:#41b3a3;
     --purple:#c38d9e;
+    --pink: #fe7f9c;
+    --lightBlue: #85dcb;
+
 }
 
 *{
@@ -62,6 +65,17 @@ body {
 .padding2{
     padding-top: 80px;
 }
+
+.padding3{
+    padding-top: 115px;
+}
+
+
+.footerColour{
+color: #264143;
+}
+
+
 .rect:hover { 
     opacity: 0.5; 
 }
@@ -82,7 +96,7 @@ a{
 
 /**Heading**/
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6,  p{
     margin:15px 0;
 }
 h1,
@@ -93,7 +107,7 @@ p {
 }
 
 h1{
-    color: var(--pink);
+    color: var(--blue);
 }
 h2 {
     color: var(--darkbrown);
@@ -101,6 +115,17 @@ h2 {
 h3{
     color: var(--green);
 }
+
+h5{
+    color: var(--purple);
+}
+
+h6{
+    color: var(--pink);
+}
+
+
+
 
 /**Heading End**/
 
@@ -117,7 +142,7 @@ h3{
     align-items: center;
 }
 
-.conatiner{
+.container{
     width: 90vw;
     margin: 0 auto;
 }
@@ -233,6 +258,16 @@ navBtn:hover{
       
 }
 
+.transparent2{
+    background-color: rgba(255, 255, 255, 0.6);
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    margin: 10px;
+    width: 500px;
+    text-align: center;
+  
+}
+
 .blockquote{
     font-size:20px;
     font-weight: 300;
@@ -241,6 +276,23 @@ navBtn:hover{
 
     text-align: center;
 }
+
+.blockquote1{
+    font-size:20px;
+    font-weight: 100;
+    opacity: 0.9;
+    width: 60vw;
+    margin-left: 50px ;
+
+}
+
+.blockquote2{
+    font-size:20px;
+    font-weight: 300;
+    opacity: 0.9;
+
+}
+
 
 .blockquotespan {
     font-size: 14px;
@@ -312,6 +364,10 @@ navBtn:hover{
     text-align: center;
 }
 
+.SecRightHeading1{
+    color: var(--darkbrown);
+}
+
 .SecRightP{
     opacity: 0.9;
     font-weight: 300;
@@ -319,7 +375,10 @@ navBtn:hover{
 
 .work-content{
     margin: 50px;
+    margin-left: 290px;
+    margin-right: 290px;
 }
+
 
 .work-img{
     display: grid;
