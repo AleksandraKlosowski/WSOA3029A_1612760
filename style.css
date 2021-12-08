@@ -12,6 +12,13 @@
     margin: 20px;
     margin-left: 70px;
   }
+
+
+
+  .imgStyleGuide {  
+    max-width: 50%;  
+    height: auto;  
+    }  
   
   .left {
     width: 15%;
