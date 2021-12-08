@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 :root {
-
-
         --clr-primary-200: #F3EED9;
         --clr-primary-400: #824936;
     
@@ -39,6 +37,12 @@
     --pink: #fe7f9c;
     --lightBlue: #85dcb;
 
+    --pi:3.14159265359;
+    --a1: 6;
+    --a2: 23;
+    --a3: 68;
+    --a4: 3;
+
 }
 
 *{
@@ -57,6 +61,7 @@ body {
     line-height: 1.6;
     background-color: var(--lightOrange);
 }
+
 
 .padding{
     padding-top: 40px;
@@ -77,6 +82,17 @@ body {
 .padding5{
     padding-left: 80px;
 
+}
+
+.padding6{
+    padding-left: 50px;
+    padding-top: 80px;
+
+}
+
+.padding7{
+
+    padding-bottom: 40px;
 }
 
 
@@ -102,6 +118,32 @@ a{
     text-decoration: none;
     color: #000;
 }
+
+@keyframes percent1{
+    to {
+        stroke-dasharray: calc(2 * var(--pi) * 300 * var(--a1) / 100) calc(2 * var(--pi) * 300 * calc(1 - var(--a1) / 100));
+    }
+}
+
+@keyframes percent2{
+    to {
+        stroke-dasharray: calc(2 * var(--pi) * 300 * var(--a2) / 100) calc(2 * var(--pi) * 300 * calc(1 - var(--a2) / 100));
+    }
+}
+
+@keyframes percent3{
+    to {
+        stroke-dasharray: calc(2 * var(--pi) * 300 * var(--a3) / 100) calc(2 * var(--pi) * 300 * calc(1 - var(--a3) / 100));
+    }
+}
+
+@keyframes percent4{
+    to {
+        stroke-dasharray: calc(2 * var(--pi) * 300 * var(--a4) / 100) calc(2 * var(--pi) * 300 * calc(1 - var(--a4) / 100));
+    }
+}
+
+
 
 /**Heading**/
 
@@ -156,6 +198,55 @@ h6{
     width: 90vw;
     margin: 0 auto;
 }
+
+.donutContainer{
+    width: 800px;
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut{
+    transform-origin: center center;
+    transition: 0.5s ease-in-out;
+    stroke-dashoffset: 0;
+    cursor: pointer;
+}
+
+.donut:nth-child(1) {
+    transform: rotateZ(-90deg);
+    animation: percent1 1s ease-in-out forwards;
+}
+
+.donut:nth-child(2) {
+    transform: rotateZ(calc(-90deg + calc(var(--a1) * 360deg / 100)));
+    animation: percent2  1s ease-in-out forwards;
+}
+
+.donut:nth-child(3) {
+    transform: rotateZ(calc(-90deg + calc(var(--a1) * 360deg / 100) + calc(var(--a2) * 360deg / 100)));
+    animation: percent3  1s ease-in-out forwards;
+} 
+
+.donut:nth-child(4) {
+    transform: rotateZ(calc(-90deg + calc(var(--a1) * 360deg / 100) + calc(var(--a2) * 360deg / 100) + calc(var(--a3) * 360deg / 100)));
+    animation: percent4  1s ease-in-out forwards;
+} 
+
+.donut:hover{
+    stroke-width: 80;
+}
+
+svg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .btn{
     background: var(--blue);
@@ -343,6 +434,16 @@ navBtn:hover{
 .sec-one-left3{
     height: 100vh;
     background: url("images/lips.jpg") center/cover no-repeat;
+    box-shadow: 0px 0px 14px -1px rgba(0, 0, 6, 0.75);
+    -webkit-box-shadow: 0px, 0px, 14px, -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+
+        padding-top: 80px;
+}
+
+.sec-one-left4{
+    height: 100vh;
+    background: url("images/eyes3.jpg") center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0, 0, 6, 0.75);
     -webkit-box-shadow: 0px, 0px, 14px, -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
