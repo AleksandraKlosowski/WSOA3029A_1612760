@@ -134,7 +134,7 @@ var simplemaps_continentmap_mapdata={
         name: "Gauteng",
         lat: -26.195246,
         lng: 28.034088,
-        description: "default",
+        description: "Covid in Gauteng",
         color: "default",
         url: "https://sacoronavirus.co.za/",
         size: "default"
